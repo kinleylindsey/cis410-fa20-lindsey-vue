@@ -2,7 +2,7 @@
   <div id="app">
       <div class="container-fluid">
           <app-header></app-header>
-          <h4>Camera Review App</h4>
+          <h4>Photography App</h4>
           <router-view></router-view>
         </div>
   </div>

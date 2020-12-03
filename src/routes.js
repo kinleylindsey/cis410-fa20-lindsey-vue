@@ -7,7 +7,7 @@ import Login from './components/Login.vue';
 import CameraDetail from './components/CameraDetail.vue';
 import Camera from './components/Camera.vue';
 import NotFound from './components/NotFound.vue';
-import ReviewCreate from './components/ReviewCreate.vue';
+import PhotoCreate from './components/PhotoCreate.vue'; 
 import SignUp from './components/SignUp.vue';
 
 Vue.use(VueRouter);
@@ -19,7 +19,7 @@ const routes = [
     {path: '/camera', component: Camera},
     {path: '/camera/:pk', component: CameraDetail,
         children: [
-            {path: 'review', component: ReviewCreate}
+            {path: 'photo', component: PhotoCreate}
         ] },
     {path: '/signup', component: SignUp},
     {path: '/:invalidroute(.*)', component: NotFound}
