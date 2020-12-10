@@ -4,7 +4,8 @@ import axios from 'axios'
 
 import router from './routes.js'
 
-axios.defaults.baseURL = " ";
+axios.defaults.baseURL = "";
+
 new Vue({
   el: '#app',
   router,

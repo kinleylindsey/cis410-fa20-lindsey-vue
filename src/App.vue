@@ -16,11 +16,11 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Hello world'
     }
   },
   components:{
-    "app-header": header
+    "app-header": Header
 }
 }
 </script>
