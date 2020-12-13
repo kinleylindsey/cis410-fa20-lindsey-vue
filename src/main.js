@@ -5,7 +5,7 @@ import axios from 'axios'
 import store from './store.js'
 import router from './routes.js'
 
-axios.defaults.baseURL = "https://cis410-fa20-lindsey-api.azurewebsites.net/";
+axios.defaults.baseURL = "https://cis410-fa20-lindsey-api3.azurewebsites.net/";
 
 new Vue({
   el: '#app',

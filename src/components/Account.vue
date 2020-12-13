@@ -6,7 +6,7 @@
 
         <p v-if="accountError" class="form-text text-danger">Can not get your account information, please try again later</p>
         
-        <table v-if="reviewsByUser" class="table">
+        <table v-if="photosByUser" class="table">
             <thead>
                 <th>Camera</th>
                 <th>Exposure</th>
@@ -15,7 +15,7 @@
             </thead>
             <tbody>
                 <tr v-for="thisPhoto in photosByUser" :key="thisPhoto.PhotoPK">
-                    <th><router-link :to="`/cameras/${thisPhoto.PhotoFK}`">{{thisPhoto.Camera}}</router-link></th>
+                    <th><router-link :to="`/cameras/${thisPhoto.CameraFK}`">{{thisPhoto.CameraFK}}</router-link></th>
                     <th>{{thisPhoto.Exposure}}</th>
                     <th>{{thisPhoto.Saturation}}</th>
                     <th>{{thisPhoto.Contrast}}</th>
@@ -40,7 +40,7 @@ export default {
         return this.$store.state.user.NameFirst}
     },
     created(){
-        axios.get("/photos/me", {
+        axios.get("/records", {
             headers: {
                 Authorization: `Bearer ${this.$store.state.token}`
             }
