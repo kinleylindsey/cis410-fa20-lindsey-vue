@@ -23,7 +23,7 @@ const routes = [
     {path: '/camera', component: Camera},
     {path: '/camera/:pk', component: CameraDetail,
         children: [
-            {path: 'photos', component: PhotoCreate}
+            {path: '/photos', component: PhotoCreate}
         ] },
     {path: '/signup', component: SignUp},
     {path: '/:invalidroute(.*)', component: NotFound}

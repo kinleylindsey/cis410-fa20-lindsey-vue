@@ -18,7 +18,7 @@
                     <td>{{thisCamera.Lens}}</td>
                     <td>{{thisCamera.MemoryCard}}</td>
                     <td>
-                        <router-link :to="`/cameras/${thisCamera.CameraPK}`">
+                        <router-link :to="`/camera/${thisCamera.CameraPK}`">
                             <button type="button" class="btn btn-primary">Details</button>
                         </router-link>
                     </td>
